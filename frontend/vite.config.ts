@@ -1,7 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwind from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react()],
-  // no añadimos postcss/tailwind aquí porque usamos CDN Tailwind (dev quickstart).
+  plugins: [
+    react(),
+    tailwind(), // este plugin integra tailwind con Vite y hace el build/purge correcto
+  ],
 });
