@@ -1,0 +1,15 @@
+/* Global tweaks */
+:root {
+  --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+html, body, #root { height: 100%; }
+body { font-family: var(--font-family); }
+
+/* Scrollbar personalizado (copiado de tu HTML) */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Toggle helper (si la necesitas en CSS vanilla) */
+.toggle-checkbox:checked + .toggle-label { background-color: #4f46e5; }
